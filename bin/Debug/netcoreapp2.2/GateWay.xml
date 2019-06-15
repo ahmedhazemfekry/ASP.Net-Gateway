@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GateWay</name>
+    </assembly>
+    <members>
+        <member name="M:GateWay.Controllers.GateWayController.GetTodoItem(System.String)">
+            <summary>
+            Gets Specific TodoItem.
+            </summary>
+        </member>
+        <member name="M:GateWay.Controllers.GateWayController.PostTodoItem(GateWay.Models.TrainingSet)">
+             <summary>
+             Post TodoItem.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /gateway
+                 {
+                    "products": ["Pepsi 1 Litre","Pringles","Nutella Jar"],
+                    "classes": ["Soft Drinks", "Snacks", "Chocolates"]
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,16 @@
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.deps.json
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.runtimeconfig.json
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.runtimeconfig.dev.json
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.dll
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.pdb
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.csprojAssemblyReference.cache
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.csproj.CoreCompileInputs.cache
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.RazorAssemblyInfo.cache
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.RazorAssemblyInfo.cs
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.AssemblyInfoInputs.cache
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.AssemblyInfo.cs
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.RazorTargetAssemblyInfo.cache
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.dll
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.pdb
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/bin/Debug/netcoreapp2.2/GateWay.xml
+/Users/ahmed.taha/Desktop/dotNet/GateWay/GateWay/obj/Debug/netcoreapp2.2/GateWay.xml
