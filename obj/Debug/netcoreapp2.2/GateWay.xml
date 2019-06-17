@@ -4,14 +4,23 @@
         <name>GateWay</name>
     </assembly>
     <members>
-        <member name="M:GateWay.Controllers.GateWayController.GetTodoItem(System.String)">
-            <summary>
-            Gets Specific TodoItem.
-            </summary>
-        </member>
-        <member name="M:GateWay.Controllers.GateWayController.PostTodoItem(GateWay.Models.TrainingSet)">
+        <member name="M:PredictController.Controllers.PredictController.Predict(PredictController.Models.PredictionSet)">
              <summary>
-             Post TodoItem.
+               Send products titles for categories prediction.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Predict
+                 {
+                    "products": ["Pepsi 1 Litre","Pringles","Nutella Jar"]
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:TrainingController.Controllers.TrainingController.Train(TrainingController.Models.TrainingSet)">
+             <summary>
+               Send products titles and categories for training.
              </summary>
              <remarks>
              Sample request:

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace GateWay.Models
+namespace TrainingController.Models
 {
     public class TrainingSet
     {

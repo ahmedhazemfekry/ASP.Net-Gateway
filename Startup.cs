@@ -11,12 +11,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using GateWay.Models;
+using TrainingController.Models;
+using PredictController.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 using System.IO;
 
-namespace GateWay
+namespace Training
 {
     public class Startup
     {
@@ -30,8 +31,7 @@ namespace GateWay
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt =>
-                opt.UseInMemoryDatabase("TodoList"));
+         
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // Register the Swagger generator, defining 1 or more Swagger documents
@@ -40,19 +40,12 @@ namespace GateWay
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "Gateway API",
-                    Description = "A gateway for Machine Learning and Rule-Based System",
-                    TermsOfService = "None",
+                    Title = "Auris Booking Pro Gateway API",
+                    Description = "Gateway for calling two models, the first one is a Tensorflow Neural Network model, and the second is a PYKnow rule based model",
                     Contact = new Contact
                     {
                         Name = "Ahmed Taha",
-                        Email = "a.hazem1995@gmail.com",
-                        Url = "https://www.facebook.com/ahmed.hazem.758"
-                    },
-                    License = new License
-                    {
-                        Name = "Use under LICX",
-                        Url = "https://example.com/license"
+                        Email = "a.hazem1995@gmail.com"
                     }
                 });
                 // Set the comments path for the Swagger JSON and UI.
@@ -85,7 +78,7 @@ namespace GateWay
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gateway V1");
                 c.RoutePrefix = string.Empty;
             });
 

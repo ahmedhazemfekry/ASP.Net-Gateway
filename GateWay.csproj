@@ -21,5 +21,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\EmptyClass.cs" />
+    <Compile Remove="Models\TodoItem.cs" />
+    <Compile Remove="Controllers\TrainController.cs" />
+    <Compile Remove="Models\TodoContext.cs" />
+    <Compile Remove="Controllers\TrainController.cs" />
+    <Compile Remove="Controllers\ValuesController.cs" />
   </ItemGroup>
 </Project>
