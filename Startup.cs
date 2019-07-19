@@ -11,8 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using TrainingController.Models;
-using PredictController.Models;
+using MLTrainingController.Models;
+using MLAssignmentController.Models;
+using RulesMatchingController.Models;
 using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 using System.IO;
@@ -51,6 +52,7 @@ namespace Training
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.OperationFilter<FileUploadOperation>(); //Register File Upload Operation Filter
                 c.IncludeXmlComments(xmlPath);
             });
 

@@ -4,7 +4,7 @@
         <name>GateWay</name>
     </assembly>
     <members>
-        <member name="M:PredictController.Controllers.PredictController.Predict(PredictController.Models.PredictionSet)">
+        <member name="M:MLAssignmentController.Controllers.MLAssignmentController.Predict(MLAssignmentController.Models.PredictionSet)">
              <summary>
                Send products titles for categories prediction.
              </summary>
@@ -18,7 +18,7 @@
             
              </remarks>
         </member>
-        <member name="M:TrainingController.Controllers.TrainingController.Train(TrainingController.Models.TrainingSet)">
+        <member name="M:MLTrainingController.Controllers.MLTrainingController.Train(MLTrainingController.Models.TrainingSet)">
              <summary>
                Send products titles and categories for training.
              </summary>
@@ -29,6 +29,40 @@
                  {
                     "products": ["Pepsi 1 Litre","Pringles","Nutella Jar"],
                     "classes": ["Soft Drinks", "Snacks", "Chocolates"]
+                    "training_type": 1
+                 }
+            
+              For training type there are three choices 
+             1) dataset is very small less than 100 products choose training_type = 1
+             2) dataset is small less than 500 products choose training_type = 2
+             3) dataset is not small more than 500 products choose training_type = 3
+            
+             </remarks>
+        </member>
+        <member name="M:RulesMatching.Controllers.RulesMatchingController.Predict(RulesMatchingController.Models.FactSet)">
+             <summary>
+               Send products titles for rules matching.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Match
+                 {
+                    "products": ["Pepsi 1 Litre","Pringles","Nutella Jar"]
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:RulesUploading.Controllers.RulesUploadingController.PostFile(Microsoft.AspNetCore.Http.IFormFile)">
+             <summary>
+               Send products titles for rules matching.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Upload
+                 {
+                   File: Rules
                  }
             
              </remarks>
