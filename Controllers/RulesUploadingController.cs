@@ -46,7 +46,7 @@ namespace RulesUploading.Controllers
 
             MultipartFormDataContent multiContent = new MultipartFormDataContent();
 
-            multiContent.Add(bytes, "grammar", file.FileName);
+            multiContent.Add(bytes, "Rules", file.FileName);
       
             
             var response = await client.PostAsync("http://localhost:5020/Upload",multiContent);
